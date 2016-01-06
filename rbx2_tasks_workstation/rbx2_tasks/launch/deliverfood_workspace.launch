@@ -1,0 +1,16 @@
+<launch>
+	<!-- http://answers.ros.org/question/209035/difference-between-roslaunch-and-rosrun-with-image_view/ -->
+	<node pkg="image_view" type="image_view" name="my_camera_node">
+		<remap from="image" to="/camera/rgb/image_color" />
+	</node>
+	
+	<!--
+		<node pkg="rbx2_tasks" type="delivering_food.py" name="deliver_food_node" />
+		<node pkg="rbx2_tasks" type="something.py" name="something_node" />
+		<node name="soundplay_node" pkg="sound_play" type="soundplay_node.py"/>
+	
+	
+	<include file="$(find rbx2_ar_tags)/launch/ar_indiv_kinect.launch" /> -->
+	<include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch" />
+
+</launch>

@@ -1,0 +1,7 @@
+<launch>
+	<include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch" />
+	<!--
+  	<node pkg="rbx2_task" type="delivering_food_2" name="deliver_food_node" />
+	-->
+  	<node pkg="image_view" type="image_view" name="deliver_food_node" />
+</launch>
