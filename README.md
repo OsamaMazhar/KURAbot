@@ -1,5 +1,6 @@
 # KURAbot
 Robot Operating System (ROS) based turtlebot2 project
+(Updated: 6th January, 2016)
 
 This project uses LiDAR (laser scanner) to localize the robot in a map using adaptive (or KLD-sampling) Monte Carlo localization (AMCL) approach. The robot moves to the fixed waypoint1 which is near the Chef's counter and waits for the visual command in the form of Augmented Reality Tags (ARTags). ARTags are being detected by Microsoft Kinect which detects the "id" of the tag along its depth from the robot. These visual commands dictates the robot to move to certain waypoints which depicts tables of the customers in the map. The robot takes the food to the ordered waypoint/table, rotates until it finds table "id" which is fixed for all tables to "ARTag 7", waits for 5 seconds and return to the Chef's counter for the next command.
 
